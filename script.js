@@ -1,9 +1,9 @@
-// Smooth Scrolling to Sections
+
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
 
-// Carousel (Image Slider) Functionality
+
 let currentIndex = 0;
 const slides = document.querySelectorAll('.carousel-item');
 
@@ -21,7 +21,7 @@ function prevSlide() {
 
 setInterval(nextSlide, 3000);
 
-// Search Function for Endangered Species
+
 function filterSpecies() {
     let input = document.getElementById('search').value.toLowerCase();
     let cards = document.querySelectorAll('.card');
@@ -32,7 +32,7 @@ function filterSpecies() {
     });
 }
 
-// Modal Functionality (for Donation & Volunteer Popups)
+
 function openModal(type) {
     document.getElementById(`${type}-modal`).style.display = 'block';
 }
@@ -41,7 +41,7 @@ function closeModal(type) {
     document.getElementById(`${type}-modal`).style.display = 'none';
 }
 
-// Success Messages for Donations & Volunteering
+
 function donationSuccess() {
     alert('Thank you for your donation! Your support means a lot.');
     closeModal('donate');
@@ -52,12 +52,12 @@ function volunteerSuccess() {
     closeModal('volunteer');
 }
 
-// Alert for Endangered Species Information
+
 function showAlert(card) {
     alert(card.getAttribute('data-info'));
 }
 
-// Contact Form Submission
+
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("Thank you for reaching out! We will get back to you soon.");
@@ -65,7 +65,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 });
 
 
-// Contact Form Submission Handling
+
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     
