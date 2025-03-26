@@ -1,0 +1,304 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Species Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <header>
+        <h1>Endangered Species Population Decline</h1>
+    </header>
+    <main>
+        <section class="species-info">
+            <h2>Endangered Species Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Species</th>
+                        <th>Population (2020)</th>
+                        <th>Population (2010)</th>
+                        <th>Population (2000)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amur Leopard</td>
+                        <td>120</td>
+                        <td>80</td>
+                        <td>30</td>
+                        <td>A critically endangered leopard species found in Russia and China.</td>
+                    </tr>
+                    <tr>
+                        <td>Sumatran Elephant</td>
+                        <td>2,400</td>
+                        <td>3,000</td>
+                        <td>4,500</td>
+                        <td>One of the smallest Asian elephant subspecies, native to Sumatra.</td>
+                    </tr>
+                    <tr>
+                        <td>Vaquita</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>600</td>
+                        <td>The rarest marine mammal, found in the Gulf of California.</td>
+                    </tr>
+                    <tr>
+                        <td>Javan Rhino</td>
+                        <td>76</td>
+                        <td>50</td>
+                        <td>35</td>
+                        <td>A rare rhino species found only in Ujung Kulon National Park.</td>
+                    </tr>
+                    <tr>
+                        <td>Green Sea Turtle</td>
+                        <td>85,000</td>
+                        <td>95,000</td>
+                        <td>110,000</td>
+                        <td>A marine turtle species facing threats due to habitat loss.</td>
+                    </tr>
+                    <tr>
+                        <td>Snow Leopard</td>
+                        <td>4,000</td>
+                        <td>5,500</td>
+                        <td>7,000</td>
+                        <td>A majestic big cat native to the mountains of Central and South Asia.</td>
+                    </tr>
+                    <tr>
+                        <td>Giant Panda</td>
+                        <td>1,864</td>
+                        <td>1,600</td>
+                        <td>1,200</td>
+                        <td>A conservation success story, but still vulnerable to habitat loss.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="chart-container">
+            <canvas id="speciesChart"></canvas>
+        </section>
+    </main>
+    <script>
+        const ctx = document.getElementById('speciesChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2000', '2010', '2020'],
+                datasets: [
+                    {
+                        label: 'Amur Leopard',
+                        data: [30, 80, 120],
+                        borderColor: 'red',
+                        fill: false
+                    },
+                    {
+                        label: 'Sumatran Elephant',
+                        data: [4500, 3000, 2400],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'Vaquita',
+                        data: [600, 30, 10],
+                        borderColor: 'green',
+                        fill: false
+                    },
+                    {
+                        label: 'Javan Rhino',
+                        data: [35, 50, 76],
+                        borderColor: 'purple',
+                        fill: false
+                    },
+                    {
+                        label: 'Green Sea Turtle',
+                        data: [110000, 95000, 85000],
+                        borderColor: 'orange',
+                        fill: false
+                    },
+                    {
+                        label: 'Snow Leopard',
+                        data: [7000, 5500, 4000],
+                        borderColor: 'cyan',
+                        fill: false
+                    },
+                    {
+                        label: 'Giant Panda',
+                        data: [1200, 1600, 1864],
+                        borderColor: 'pink',
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Species Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <header>
+        <h1>Endangered Species Population Decline</h1>
+    </header>
+    <main>
+        <section class="species-info">
+            <h2>Endangered Species Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Species</th>
+                        <th>Population (2020)</th>
+                        <th>Population (2010)</th>
+                        <th>Population (2000)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/amur_leopard.jpg" alt="Amur Leopard" class="animal-img"></td>
+                        <td>Amur Leopard</td>
+                        <td>120</td>
+                        <td>80</td>
+                        <td>30</td>
+                        <td>A critically endangered leopard species found in Russia and China.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/sumatran_elephant.jpg" alt="Sumatran Elephant" class="animal-img"></td>
+                        <td>Sumatran Elephant</td>
+                        <td>2,400</td>
+                        <td>3,000</td>
+                        <td>4,500</td>
+                        <td>One of the smallest Asian elephant subspecies, native to Sumatra.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/vaquita.jpg" alt="Vaquita" class="animal-img"></td>
+                        <td>Vaquita</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>600</td>
+                        <td>The rarest marine mammal, found in the Gulf of California.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/javan_rhino.jpg" alt="Javan Rhino" class="animal-img"></td>
+                        <td>Javan Rhino</td>
+                        <td>76</td>
+                        <td>50</td>
+                        <td>35</td>
+                        <td>A rare rhino species found only in Ujung Kulon National Park.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/green_sea_turtle.jpg" alt="Green Sea Turtle" class="animal-img"></td>
+                        <td>Green Sea Turtle</td>
+                        <td>85,000</td>
+                        <td>95,000</td>
+                        <td>110,000</td>
+                        <td>A marine turtle species facing threats due to habitat loss.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/snow_leopard.jpg" alt="Snow Leopard" class="animal-img"></td>
+                        <td>Snow Leopard</td>
+                        <td>4,000</td>
+                        <td>5,500</td>
+                        <td>7,000</td>
+                        <td>A majestic big cat native to the mountains of Central and South Asia.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/giant_panda.jpg" alt="Giant Panda" class="animal-img"></td>
+                        <td>Giant Panda</td>
+                        <td>1,864</td>
+                        <td>1,600</td>
+                        <td>1,200</td>
+                        <td>A conservation success story, but still vulnerable to habitat loss.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="chart-container">
+            <canvas id="speciesChart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Animal Welfare Organization | Contact us: <a href="tel:+1234567890">+1 234 567 890</a></p>
+    </footer>
+    <script>
+        const ctx = document.getElementById('speciesChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2000', '2010', '2020'],
+                datasets: [
+                    {
+                        label: 'Amur Leopard',
+                        data: [30, 80, 120],
+                        borderColor: 'red',
+                        fill: false
+                    },
+                    {
+                        label: 'Sumatran Elephant',
+                        data: [4500, 3000, 2400],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'Vaquita',
+                        data: [600, 30, 10],
+                        borderColor: 'green',
+                        fill: false
+                    },
+                    {
+                        label: 'Javan Rhino',
+                        data: [35, 50, 76],
+                        borderColor: 'purple',
+                        fill: false
+                    },
+                    {
+                        label: 'Green Sea Turtle',
+                        data: [110000, 95000, 85000],
+                        borderColor: 'orange',
+                        fill: false
+                    },
+                    {
+                        label: 'Snow Leopard',
+                        data: [7000, 5500, 4000],
+                        borderColor: 'cyan',
+                        fill: false
+                    },
+                    {
+                        label: 'Giant Panda',
+                        data: [1200, 1600, 1864],
+                        borderColor: 'pink',
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

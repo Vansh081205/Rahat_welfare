@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Welfare Project</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>.marquee {
+        background: #5e1b1b;
+        color: white;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .marquee span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 10s linear infinite;
+    }
+    
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="navbar">
+            <a href="#" ><img src="images/WhatsApp Image 2025-03-26 at 12.30.42 AM.jpeg"  class="logo"  height="100" width="100"></a>
+        <nav>
+            <ul>
+                <li class="search-item">
+                    
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="chart.html">Species</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="signup.html"><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+               
+        </nav>
+    </header>
+    <div class="marquee">
+        
+        <span>🚨 Emergency? Call us at +1-800-ANIMAL-HELP 🚨 || Support Animal Welfare - Adopt, Don't Shop! 🐾 | Raise Your Voice for the Voiceless! ❤️</span>
+    </div>
+ 
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/essay-dog-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcad30c94-e586-4cc2-9289-3393e9219e18.jpg?crop=2839%2C1893%2C376%2C349" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.petaindia.com/wp-content/uploads/2021/04/summer-tips-photo-for-dog-and-cat.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section id="home" class="hero">
+        
+        <h1>Protect Our Wildlife</h1>
+        <p>Join us in saving endangered species and promoting ethical treatment of animals.</p>
+        <button onclick="scrollToSection('get-involved')">Get Involved</button>
+    </section>
+
+    <section id="quotes">
+        <h2>Inspirational Quotes</h2>
+        <blockquote>"The greatness of a nation and its moral progress can be judged by the way its animals are treated." - Mahatma Gandhi</blockquote>
+        <blockquote>"Until one has loved an animal, a part of one's soul remains unawakened." - Anatole France</blockquote>
+        <blockquote>"We can judge the heart of a man by his treatment of animals." - Immanuel Kant</blockquote>
+        <blockquote>"Animals are such agreeable friends—they ask no questions; they pass no criticisms." - George Eliot</blockquote>
+        <blockquote>"Compassion for animals is intimately associated with goodness of character." - Arthur Schopenhauer</blockquote>
+    </section>
+
+    <!-- Endangered Species Section -->
+    <section id="species" class="species-grid">
+        <h2>Endangered Species</h2>
+        <input type="text" id="search" placeholder="Search Species..." onkeyup="filterSpecies()">
+        <div class="card" data-info="Tigers are critically endangered due to poaching and habitat loss.">
+            <img src="https://www.abhibus.com/blog/wp-content/uploads/2023/09/Tiger-Reserves-in-India.jpg" alt="Tiger">
+            <h3>Tiger</h3>
+        </div>
+        <div class="card" data-info="Pandas are threatened due to habitat destruction and food scarcity.">
+            <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/3787/image/s768x1300/panda_1.jpg" alt="Panda">
+            <h3>Panda</h3>
+        </div>
+        <div class="card" data-info="Sea turtles suffer from plastic pollution and climate change.">
+            <img src="https://images.squarespace-cdn.com/content/v1/5369465be4b0507a1fd05af0/1528837069483-LD1R6EJDDHBY8LBPVHIU/randall-ruiz-272502.jpg" alt="Sea Turtle">
+            <h3>Sea Turtle</h3>
+        </div>
+        <div class="card" data-info="Elephants are targeted for their ivory, leading to a decline in their population.">
+            <img src="https://i.natgeofe.com/k/e7ba8001-23ac-457f-aedb-abd5f2fdda62/moms5_4x3.png" alt="Elephant">
+            <h3>Elephant</h3>
+        </div>
+        <div class="card" data-info="Rhinos face extinction due to illegal poaching for their horns.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-AAGdfuZEPgAtxTaTWnrzo2fGVVwi9vWpgQ&s" alt="Rhino">
+            <h3>Rhino</h3>
+        </div>
+        <div class="card" data-info="Snow leopards are endangered due to habitat loss and poaching.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPFO2CfFjumW-hcSIM_B7Kna0rwkusCbuaBg&s" alt="Snow Leopard">
+            <h3>Snow Leopard</h3>
+        </div>
+        <div class="card" data-info="Dolphins are threatened by fishing nets and ocean pollution.">
+            <img src="https://cdn.creatureandcoagency.com/uploads/2014/06/Bottlenose-Dolphin-Facts-2.jpg" alt="Dolphin">
+            <h3>Dolphin</h3>
+        </div>
+        <div class="card" data-info="Orangutans are endangered due to deforestation and illegal pet trade.">
+            <img src="https://cdn.thegreatprojects.com/thegreatprojects/images/5/7/5/f/6/575f69411c2e3b06831081dba770bd79.jpg?width=492&height=492&format=jpg" alt="Orangutan">
+            <h3>Orangutan</h3>
+        </div>
+        <div class="card" data-info="Blue whales are at risk due to ship collisions and climate change.">
+            <img src="https://environment.co/wp-content/uploads/sites/4/2024/01/squaddeepfx_photorealistic_image_of_a_blue_whale_mother_and_cal_39128ed5-e129-4267-938e-65217468be14.jpg" alt="Blue Whale">
+            <h3>Blue Whale</h3>
+        </div>
+    </section>
+
+    <!-- Domestic Animals Section -->
+    <section id="domestic" class="domestic-grid">
+        <h2>Domestic Animals</h2>
+        <div class="card" data-info="Dogs are loyal companions and need proper care and love.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVfNU9E70fimbp2XyzgYSQIXzNTqj1-jqHQ&s" alt="Dog">
+            <h3>Dog</h3>
+        </div>
+        <div class="card" data-info="Cats are independent and affectionate pets that require proper attention.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV2HHPEbz_gUHOz6qFDtUb0ULgLoL8nvcq1g&s" alt="Cat">
+            <h3>Cat</h3>
+        </div>
+        <div class="card" data-info="Horses have been human companions for centuries and need ethical treatment.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqevnOaUyJRjYYSurAOl1L2v4W6egVsQFZ3A&s" alt="Horse">
+            <h3>Horse</h3>
+        </div>
+    </section>
+<hr><hr>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Our Mission</h2>
+        <p>We are dedicated to protecting animals from cruelty and extinction.</p>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved">
+        <h2>How You Can Help</h2>
+        <div class="actions">
+            <button onclick="openModal('donate')">Donate</button>
+            <button onclick="openModal('volunteer')">Volunteer</button>
+        </div>
+    </section>
+
+    <!-- Donation & Volunteer Modal -->
+    <div id="donate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('donate')">&times;</span>
+            <h2>Donate to Support</h2>
+            <p>Your donation helps protect endangered species and fund rescue operations.</p>
+            <button class="donate-btn">Donate Now</button>
+        </div>
+    </div>
+
+    <div id="volunteer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('volunteer')">&times;</span>
+            <h2>Become a Volunteer</h2>
+            <p>Join us in making a difference for animals in need.</p>
+            <button class="volunteer-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact Section -->
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <p>Email: <a href="mailto:info@animalwelfare.org">info@animalwelfare.org</a></p>
+</footer>
+
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"></svg>
+              </a>
+              <p class="text-body-secondary">© 2024</p>
+            </div>
+        
+            <div class="col mb-3">
+        
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+          </footer>
+    </footer>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
